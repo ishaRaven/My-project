@@ -87,7 +87,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 session_start();
                 $_SESSION['username'] = $user_name;
                 $_SESSION['password'] = $pass;
-                header("Location: /forum/index.php?signupsuccess=true");
+                header("Location: /forum/welcome.php?signupsuccess=true");
                 exit();
             }
 

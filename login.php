@@ -63,7 +63,7 @@
                 if (password_verify($pass , $cpass)){
                     session_start();
                     $_SESSION['username'] = $user_name;
-                    header("Location: /forum/index.php?");
+                    header("Location: /forum/welcome.php?");
                 }
                 else{
                     echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
